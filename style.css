@@ -1,0 +1,68 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+th {
+  background: #664fcd;
+  color: white;
+}
+
+/* SUBJECT COLUMN (FIX → NO COLOR) */
+.work-table td:first-child {
+  background: #1e293b;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* ONLY TASK CELLS (Notes, Assignment, Record, Observation) */
+.work-table td:not(:first-child) {
+  background: #ef4444;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* completed */
+.completed {
+  background: #22c55e !important;
+  color: black;
+  font-weight: bold;
+}
+
+/* hover effect */
+.work-table td:not(:first-child):hover {
+  opacity: 0.85;
+}
+
+/* lunch */
+.lunch {
+  background: #f59e0b !important;
+  color: black;
+  font-weight: bold;
+}
+
+.today-row {
+  background: #1e3a8a !important;
+  color: white;
+  font-weight: bold;
+}
+
+#timetable td.completed {
+  background: #22c55e !important;
+  color: black;
+  font-weight: bold;
+}
