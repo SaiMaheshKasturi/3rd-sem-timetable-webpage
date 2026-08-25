@@ -1,0 +1,159 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+th {
+  background: #664fcd;
+  color: white;
+}
+
+/* SUBJECT COLUMN (FIX → NO COLOR) */
+.work-table td:first-child {
+  background: #1e293b;
+  color: white;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* ONLY TASK CELLS (Notes, Assignment, Record, Observation) */
+.work-table td:not(:first-child) {
+  background: #ef4444;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* completed */
+.completed {
+  background: #22c55e !important;
+  color: black;
+  font-weight: bold;
+}
+
+/* hover effect */
+.work-table td:not(:first-child):hover {
+  opacity: 0.85;
+}
+
+/* lunch */
+.lunch {
+  background: #f59e0b !important;
+  color: black;
+  font-weight: bold;
+}
+
+.today-row {
+  background: #1e3a8a !important;
+  color: white;
+  font-weight: bold;
+}
+
+#timetable td.completed {
+  background: #22c55e !important;
+  color: black;
+  font-weight: bold;
+}
+
+.current-card{
+    width:500px;
+    max-width:95%;
+    margin:20px auto;
+    padding:20px;
+
+    text-align:center;
+
+    background:#1f2937;
+
+    border:3px solid gold;
+
+    border-radius:15px;
+
+    box-shadow:0 0 20px rgba(255,215,0,.35);
+}
+
+.current-card h1{
+    margin:10px 0;
+    color:#00ff7f;
+}
+
+.status{
+    color:gold;
+    font-weight:bold;
+    font-size:20px;
+}
+
+#currentTime{
+    color:white;
+    margin-top:10px;
+}
+
+#remainingTime{
+    color:#7dd3fc;
+    margin-top:10px;
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-card{
+    width:500px;
+    max-width:95%;
+    margin:20px auto;
+    padding:20px;
+    background:#1f2937;
+    text-align:center;
+    border:3px solid gold;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(255,215,0,.35);
+}
+
+#progressMessage{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:bold;
+    color:#fbbf24;
+}
+
+.progress-bar{
+    width:100%;
+    height:25px;
+
+    background:#374151;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+}
+
+#progressFill{
+    width:0%;
+
+    height:100%;
+
+    background:#22c55e;
+
+    transition:.4s;
+}
+
+#progressText{
+    font-size:18px;
+    font-weight:bold;
+}
+
+#progressCount{
+    color:#60a5fa;
+}
